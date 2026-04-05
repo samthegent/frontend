@@ -1,0 +1,72 @@
+body {
+background-color: #f8f3f0;
+line-height: 1.3;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: rgb(0, 0, 0);
+}
+
+.full-name, .designation, h2 {
+  font-family: 'Merriweather', serif;
+}
+
+body, p, a, .company {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.full-name {
+  font-size: 24px;
+  margin-bottom: 0%;
+}
+
+.business-card {
+  width: 90%;
+  max-width: 400px;
+  background-color: rgb(234, 203, 203); 
+  padding: 30px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+hr {
+  height: 1px;
+  background-color: black;
+  border-color: black;
+}
+
+a {
+color:#c0392b;
+text-decoration: none;
+font-weight: bold;
+}
+
+a:visited {
+color: black;
+}
+
+ a:hover {
+  color: #922b21;
+ }
+
+ a:active {
+  color: blueviolet;
+ }
+
+ a:focus {
+  outline: 2px solid black;
+ }

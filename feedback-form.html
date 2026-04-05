@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="feedback-form.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Hotel Feedback Form</title>
+</head>
+<body>
+  <header>
+    <h1>Hotel Feedback Form</h1>
+    <p>Thank you for staying with us. Please provide feedback on your recent stay.</p>
+  </header>
+
+  <main>
+    <form method="POST" action="https://hotel-feedback.freecodecamp.org">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="full-name">Name (required):</label><br />
+        <input type="text" id="full-name" name="name" placeholder="Ex. John Doe" required /><br />
+
+        <label for="email">Email address (required):</label><br />
+        <input type="email" id="email" name="email" placeholder="example@email.com" required /><br />
+
+        <label for="age">Age (optional):</label><br />
+        <input type="number" id="age" name="age" min="3" max="100" /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Was this your first time at our hotel?</legend>
+        <div class="option">
+        <input type="radio" id="yes-option" name="hotel-stay" value="yes" />
+        <label for="yes-option">Yes</label><br />
+        
+        <input type="radio" id="no-option" name="hotel-stay" value="no" />
+        <label for="no-option">No</label><br />
+      </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Why did you choose to stay at our hotel? (Check all that apply)</legend>
+
+        <input type="checkbox" id="ads" name="reasons" value="ads" />
+        <label for="ads">Social Media Ads</label><br />
+
+        <input type="checkbox" id="recommendation" name="reasons" value="recommendation" />
+        <label for="recommendation">Personal Recommendation</label><br />
+
+        <input type="checkbox" id="location" name="reasons" value="location" />
+        <label for="location">Location</label><br />
+
+        <input type="checkbox" id="reputation" name="reasons" value="reputation" checked />
+        <label for="reputation">Reputation</label><br />
+
+        <input type="checkbox" id="price" name="reasons" value="price" />
+        <label for="price">Price</label><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Ratings</legend>
+
+        <label for="service">How was the service?</label><br />
+        <select name="service" id="service">
+          <option value="poor">Poor</option>
+          <option value="satisfactory">Satisfactory</option>
+          <option value="good">Good</option>
+          <option value="very-good">Very Good</option>
+          <option value="excellent" selected>Excellent</option>
+        </select><br />
+
+        <label for="food">How was the food?</label><br />
+        <select name="food" id="food">
+          <option value="poor">Poor</option>
+          <option value="satisfactory">Satisfactory</option>
+          <option value="good">Good</option>
+          <option value="very-good">Very Good</option>
+          <option value="excellent" selected>Excellent</option>
+        </select><br />
+      </fieldset>
+
+      <label id="comments" for="comments"><strong>Other Comments?. Let's know your thoughts below.</strong></label><br />
+      <textarea id="comments" name="comments" cols="30" rows="5" placeholder="Write your feedback here..."></textarea><br />
+
+<button type="submit">
+  <i class="fas fa-paper-plane"></i> Submit
+</button>
+    </form>
+  </main>
+</body>
+</html>
